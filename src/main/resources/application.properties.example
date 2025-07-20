@@ -1,0 +1,13 @@
+spring.application.name=hotel-management-service-api
+server.port=9091
+
+# database configuration
+spring.datasource.url=jdbc:{{dbms}}://localhost:{{port}}/{{database_name}}?createDatabaseIfNotExist=true
+spring.datasource.username={{username}}
+spring.datasource.password={{password}}
+spring.datasource.driver-class-name={{drive_type}}
+
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MariaDBDialect
+
+spring.jpa.generate-ddl=true
+spring.jpa.hibernate.ddl-auto=update
